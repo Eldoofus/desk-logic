@@ -67,6 +67,9 @@ public class CustomBlock{
                 case "xnor": return new Xnor(tile);
                 case "nand": return new Nand(tile);
                 case "greater": return new Greater(tile);
+                case "greaterorequal": return new GreatEq(tile);
+                case "less": return new Lesser(tile);
+                case "lessorequal": return new LessEq(tile);
                 case "light": return new Light(tile);
                 case "power": return new PowerInfo(tile);
                 case "scale": return new Scale(tile);
