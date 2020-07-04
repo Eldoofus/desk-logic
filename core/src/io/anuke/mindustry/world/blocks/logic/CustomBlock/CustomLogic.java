@@ -94,3 +94,33 @@ class Greater extends CustomLogic{
         digitalWrite(analogRead(in2) > analogRead(in), out, out2);
     }
 }
+
+class Lesser extends CustomLogic{
+    Greater(Tile tile){
+        super(tile);
+    }
+    @Override
+    void logic(){
+        digitalWrite(analogRead(in2) < analogRead(in), out, out2);
+    }
+}
+
+class GreatEq extends CustomLogic{
+    Greater(Tile tile){
+        super(tile);
+    }
+    @Override
+    void logic(){
+        digitalWrite(analogRead(in2) >= analogRead(in), out, out2);
+    }
+}
+
+class LessEq extends CustomLogic{
+    Greater(Tile tile){
+        super(tile);
+    }
+    @Override
+    void logic(){
+        digitalWrite(analogRead(in2) <= analogRead(in), out, out2);
+    }
+}
